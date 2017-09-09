@@ -33,6 +33,7 @@ form {
 }
 .container button:hover {
 	background-color: red;
+	transition: background-color 0.5s ease;
 }
 .container h1 {
 	font-size: 48px;
