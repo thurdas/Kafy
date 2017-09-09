@@ -33,7 +33,11 @@ form {
 }
 .container button:hover {
 	background-color: red;
-	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+	cursor: pointer;
 }
 .container h1 {
 	font-size: 48px;
