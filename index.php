@@ -37,9 +37,6 @@
         event.preventDefault();
         displayLoading();
     });
-    setTimeout(function(){
-        document.getElementById("login-form").submit();
-    }, 5000);
 
     function displayLoading() {
         document.getElementById("submit-button").style.display = "none";
