@@ -1,18 +1,32 @@
-body {
-	 background-image: url("../img/placeholder.jpeg");
-	 background-size: cover;
-	 background-repeat: no-repeat;
+html {
+	height: 100%;
+	margin: 0;
+	background-image: url("../img/placeholder.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+#login-page {
+
 }
 .container {
 	background-color: white;
-	padding: 10%;
-	border: 2px solid #ededed;
-	border-radius: 25px;
+
 	width: 100%;
+
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }
 form {
-	width: 30%;
-	margin: 10% 32%;
+	max-width: 400px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+
+
 }
 .container input {
 	width: 98%;
@@ -35,16 +49,29 @@ form {
 	border-radius: 10px;
 }
 .container button:hover {
-	background-color: lime;
+	background-color: #2ecc71;
 	-webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 	cursor: pointer;
 }
-.container h1 {
+.login-form h1 {
 	font-size: 300%;
 	text-align: center;
+	background-color: #c0392b;
+	padding: 25px;
+
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+
+	color: white;
+}
+
+.form-wrap {
+	padding: 25px;
+	background-color: #ecf0f1;
+
 }
 .container button i {
 	margin-right: 5px;
@@ -59,4 +86,47 @@ form {
 }
 #loading-button {
 	display: none;
+}
+
+input[type=text], textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #3498db;
+}
+
+input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgb(52, 152, 219);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgb(52, 152, 219);
+}
+
+
+input[type=password], textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #3498db;
+}
+
+input[type=password]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgb(52, 152, 219);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgb(52, 152, 219);
+}
+
+.register-login {
+	text-align: center;
+	padding: 10px;
+
 }
