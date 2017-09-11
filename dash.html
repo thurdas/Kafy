@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Kafy!</title>
+
+
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/chart-master/Chart.js"></script>
+
+
+</head>
+
+<body>
+
+<section id="container" >
+	<header class="header black-bg">
+
+		<section id="logo11">
+			<a href="index.html" class="logo"><b>KAFY</b></a>
+		</section>
+		<section class="top-menu">
+			<ul class="nav pull-right top-menu">
+				<li><a class="logout" href="login.html">Logout</a></li>
+			</ul>
+		</section>
+	</header>
+		<section id="sidebar" >
+			<ul class="sidebar-menu" id="nav-accordion">
+
+				<p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+				<h5 class="centered">Johnny Bravo</h5>
+
+				<li class="mt">
+					<a class="active" href="dash.html">
+						<i class="fa fa-dashboard"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li class="sub-menu">
+					<a href="todo_list.html" >
+						<i class="fa fa-cogs"></i>
+						<span>Components</span>
+					</a>
+					<ul class="sub">
+
+						<li><a  href="todo_list.html">Todo List</a></li>
+					</ul>
+				</li>
+				<li class="sub-menu">
+					<a href="basic_table.html" >
+						<i class="fa fa-th"></i>
+						<span>Data Tables</span>
+					</a>
+					<ul class="sub">
+						<li><a  href="basic_table.html">Basic Table</a></li>
+					</ul>
+				</li>
+				<li class="sub-menu">
+					<a href="morris.html" >
+						<i class=" fa fa-bar-chart-o"></i>
+						<span>Charts</span>
+					</a>
+					<ul class="sub">
+						<li><a  href="morris.html">Morris</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</section>
+	<section id="main-content">
+		<section class="wrapper">
+
+			<section class="row">
+				<section class="main-chart">
+
+					<section class="row mtbox">
+						<section class=" col-md-offset-1 box0">
+							<section class="box1">
+								<span class="li_heart"></span>
+								<h3>20</h3>
+							</section>
+						</section>
+						<section class=" box0">
+							<section class="box1">
+								<span class="li_cloud"></span>
+								<h3>+48</h3>
+							</section>
+						</section>
+						<section class=" box0">
+							<section class="box1">
+								<span class="li_stack"></span>
+								<h3>2</h3>
+							</section>
+						</section>
+						<section class=" box0">
+							<section class="box1">
+								<span class="li_news"></span>
+								<h3>+10</h3>
+							</section>
+						</section>
+						<section class=" box0">
+							<section class="box1">
+								<span class="li_data"></span>
+								<h3>OK!</h3>
+							</section>
+
+						</section>
+
+					</section>
+
+					<section class="row mt ow">
+						<section class="col-md-4 col-sm-4 mb">
+							<section class="white-panel pn donut-chart">
+								<section class="white-header">
+									<h5>WEEKLY INCOME GOAL PROGRESS</h5>
+								</section>
+								<section class="row">
+									<section class="col-sm-6 col-xs-6 goleft">
+										<p><i class="fa fa-database"></i> 70%</p>
+									</section>
+								</section>
+								<canvas id="serverstatus01" height="120" width="120"></canvas>
+								<script>
+                                    var doughnutData = [
+                                        {
+                                            value: 70,
+                                            color:"#68dff0"
+                                        },
+                                        {
+                                            value : 30,
+                                            color : "#fdfdfd"
+                                        }
+                                    ];
+                                    var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+								</script>
+							</section><! --/grey-panel -->
+						</section>
+
+
+						<section class="col-md-4 col-sm-4 mb">
+							<section class="white-panel pn">
+								<section class="white-header">
+									<h5>TOP CONTRIBUTOR</h5>
+								</section>
+								<section class="row">
+									<section class="col-sm-6 col-xs-6 goleft">
+										<p><i class="fa fa-heart"></i> 3/4 team votes</p>
+									</section>
+									<section class="col-sm-6 col-xs-6"></section>
+								</section>
+								<section class="centered">
+									<img src="assets/img/product.png" width="120">
+								</section>
+							</section>
+						</section>
+
+						<section class="col-md-4 mb">
+
+							<section class="white-panel pn">
+								<section class="white-header">
+									<h5>TOP USER</h5>
+								</section>
+								<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+
+							</section>
+						</section>
+
+
+					</section>
+
+
+
+					<section class="row mt">
+
+						<section class="border-head">
+							<h3>Revenue</h3>
+						</section>
+						<section class="custom-bar-chart">
+							<ul class="y-axis">
+								<li><span>10.000</span></li>
+								<li><span>8.000</span></li>
+								<li><span>6.000</span></li>
+								<li><span>4.000</span></li>
+								<li><span>2.000</span></li>
+								<li><span>0</span></li>
+							</ul>
+							<section class="bar">
+								<section class="title">JAN</section>
+								<section class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</section>
+							</section>
+							<section class="bar ">
+								<section class="title">FEB</section>
+								<section class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</section>
+							</section>
+							<section class="bar ">
+								<section class="title">MAR</section>
+								<section class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</section>
+							</section>
+							<section class="bar ">
+								<section class="title">APR</section>
+								<section class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</section>
+							</section>
+							<section class="bar">
+								<section class="title">MAY</section>
+								<section class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</section>
+							</section>
+							<section class="bar ">
+								<section class="title">JUN</section>
+								<section class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</section>
+							</section>
+							<section class="bar">
+								<section class="title">JUL</section>
+								<section class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</section>
+							</section>
+						</section>
+
+					</section>
+
+				</section>
+
+
+				<section class=" ds">
+					<h3>NOTIFICATIONS</h3>
+
+					<section class="desc">
+						<section class="thumb">
+							<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+						</section>
+						<section class="details">
+							<p><muted>2 Minutes Ago</muted><br/>
+								<a href="#">James Brown</a> subscribed to your newsletter.<br/>
+							</p>
+						</section>
+					</section>
+					<section class="desc">
+						<section class="thumb">
+							<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+						</section>
+						<section class="details">
+							<p><muted>3 Hours Ago</muted><br/>
+								<a href="#">Diana Kennedy</a> purchased a year subscription.<br/>
+							</p>
+						</section>
+					</section>
+					<section class="desc">
+						<section class="thumb">
+							<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+						</section>
+						<section class="details">
+							<p><muted>7 Hours Ago</muted><br/>
+								<a href="#">Brandon Page</a> purchased a year subscription.<br/>
+							</p>
+						</section>
+					</section>
+					<section class="desc">
+						<section class="thumb">
+							<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+						</section>
+						<section class="details">
+							<p><muted>11 Hours Ago</muted><br/>
+								<a href="#">Mark Twain</a> commented your post.<br/>
+							</p>
+						</section>
+					</section>
+					<section class="desc">
+						<section class="thumb">
+							<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+						</section>
+						<section class="details">
+							<p><muted>18 Hours Ago</muted><br/>
+								<a href="#">Daniel Pratt</a> purchased a wallet in your store.<br/>
+							</p>
+						</section>
+					</section>
+
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+	<footer class="site-footer">
+		<section class="text-center">
+			2017- Kafy
+			<a href="index.html#" class="go-top">
+				<i class="fa fa-angle-up"></i>
+			</a>
+		</section>
+	</footer>
+</section>
+
+<script src="assets/js/jquery.js"></script>
+
+
+
+</body>
+</html>
